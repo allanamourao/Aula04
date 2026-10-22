@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulário de Reserva em Restaurante🍳</title>
+    </head>
+    <body>
+        <header>
+            <h1 style="text-align: center;">Reserva em restaurante</h1>
+        </header>
+        <main>
+             <form action="#" method="GET">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome...">
+                <br><br>
+
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="sobrenome" name="sobrenome" required placeholder="Digite seu sobrenome...">
+                <br><br>
+                
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu email...">
+                <br><br>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                <br><br>
+
+                <label for="pessoas">Número de Pessoas:</label>
+                <input type="number" id="pessoas" name="pessoas" required>
+                <br><br>
+
+                <label for="dataReserva">Data da Reserva</label>
+                <input type="date" id="dataReserva" name="dataReserva" required>
+                <br><br>
+
+                <label for="horario">Horário da Reserva:</label>
+                <input type="time" id="horario" name="horario" required>
+                <br><br>
+
+                <p>Restrições Alimentares:</p>
+                <input type="checkbox" id="lactose" name="lactose" value="lactose" required>
+                <label for="lactose">Intolerância à lactose</label>
+                <br>
+                <input type="checkbox" id="gluten" name="gluten" value="gluten">
+                <label for="gluten">Intolerância ao glúten</label>
+                <br>
+                <input type="checkbox" id="nao" name="nao" value="nao">
+                <label for="nao">Não tenho</label>
+                <br>
+                <input type="checkbox" id="outro" name="outro" value="outro">
+                <label for="outro">Outro</label>
+                <br><br>
+
+                <label for="comentarios">Comentarios Adicionais:</label><br>
+                <textarea name="comentarios" id="comentarios" rows="5" cols="50"></textarea>
+                <br><br>
+
+                <label for="opcao">Selecione o tipo de evento:</label>
+                  <select name="opcao" id="opcao" required>
+                    <option value="" selected disabled>Selecione...</option>
+                    <option value="Date">Date</option>
+                    <option value="Aniversário">Aniversário</option>
+                    <option value="Outro">Outro ou sem data especial</option>
+                  </select>
+                <br><br>
+
+                <p>Tem alguma necessidade especial abaixo?</p>
+                <input type="checkbox" id="receberNot" name="talheres" value="talheres" required>
+                <label for="talheres">Talheres adaptados.</label>
+                <br>
+                <input type="checkbox" id="cadeira" name="cadeira" value="cadeira">
+                <label for="cadeira">Cadeira adaptada.</label>
+                <br>
+                <input type="checkbox" id="outro" name="outro" value="outro">
+                <label for="outro">Outro(Entre em contato com o restaurante).</label>
+                <br>
+                <input type="checkbox" id="nao" name="nao" value="nao" required>
+                <label for="nao">Não tenho necessidade especial.</label>
+                <br><br>
+
+                <label for="opcao">Preferência de assento?</label><br>
+                  <select name="opcao" id="opcao" required>
+                    <option value="" selected disabled>Selecione...</option>
+                    <option value="andar1">Andar 1</option>
+                    <option value="andar2">Andar 2</option>
+                    <option value="nao">Não tenho preferência.</option>
+                  </select>
+                <br><br>
+
+                <label for="codigo">Código Promocional</label>
+                <input type="text" id="codigo" name="codigo" required>
+                <br><br>
+
+                <input type="checkbox" id="termos" name="termos" value="termos">
+                <label for="termos">Li e concordo com os termos e condições.</label>
+                <br>
+                <input type="checkbox" id="receberNot" name="receberNot" value="receberNot" required>
+                <label for="receberEmail">Desejo receber notificações.</label>
+                <br><br>
+
+                
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" required placeholder="Digite a cidade desejada...">
+                <br><br>
+                
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" required placeholder="Digite seu CEP...">
+                <br><br>
+
+                <label for="opcao">Selecione o país:</label><br>
+                  <select name="opcao" id="opcao" required>
+                    <option value="" selected disabled>Selecione...</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Franca">França</option>
+                    <option value="EUA">EUA</option>
+                  </select>
+                <br><br>
+
+                <label for="referencia">Referência</label>
+                <input type="text" id="referencia" name="referencia" placeholder="Digite a referência...">
+
+                <br><br>
+                <button type="submit">Fazer Reserva</button>
+             </form>
+        </main>
+    </body>
+</html>

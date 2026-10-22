@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulário de Inscrição em curso</title>
+    </head>
+    <body>
+        <header>
+            <h1 style="text-align: center;">Inscrição para Curso</h1>
+        </header>
+        <main>
+             <form action="#" method="GET">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required placeholder="Digite seu nome...">
+                <br><br>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required placeholder="Digite seu email...">
+                <br><br>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+                <br>
+
+                <p>Endereço:</p>
+                <label for="cep">CEP</label>
+                <input type="number" id="cep" name="cep  pattern="\d{5}-?\d{3}" 
+                title="Digite um CEP válido com 8 números. Exemplo: 12345-678 ou 12345678"
+                placeholder="00000-000">
+                <br>
+                <label for="num">Número</label>
+                <input type="number" id="num" name="num" placeholder="N°00">
+                <br><br>
+
+                <label for="dataN">Data de Nascimento</label>
+                <input type="date" id="dataN" name="dataN" required>
+                <br><br>
+
+                <label for="">Selecione seu gênero:</label><br>
+                 <label for="feminino">Feminino</label>
+                 <input type="radio" value="Feminino" id="feminino" name="genero" required>
+                 <br>
+                 <label for="">Masculino</label>
+                 <input type="radio" value="Masculino" id="masculino" name="genero">
+                <br><br>
+
+                <label for="opcoes">Qual seu nível de escolaridade?</label><br>
+                  <select name="opcoes" id="opcoes" required>
+                     <option value="" selected disabled>Selecione...</option>
+                     <option value="Fundamental incompleto">Fundamental Incompleto</option>
+                     <option value="Fundamental completo">Fundamental Completo</option>
+                     <option value="Ensino Medio completo">Ensino Médio Completo</option>
+                     <option value="Ensino Superior">Ensino Superior</option>
+                  </select>
+                  <br><br>
+
+                <label for="profissao">Profissão</label><br>
+                <input type="text" id="profissao" name="profissao" required>
+                <br><br>
+
+                <label for="anterior">Experiência Anterior</label><br>
+                <input type="text" id="anterior" name="anterior" required>
+                <br><br>
+
+                <label for="motivacao">Motivação para o curso</label><br>
+                <textarea name="motivacao" id="motivacao" rows="5" cols="50" placeholder="Deixe aqui um textinho sobre suas motivações para começar esse curso"></textarea>
+                <br><br>
+
+                <label for="expectativa">Qual sua expectativa?</label><br>
+                <input type="range" id="expectativa" name="expectativa" min="0" max="100" step="1" value="0" required>
+                <br><br>
+
+                <input type="checkbox" id="termos" name="termos" value="termos" required>
+                <label for="termos">Li e concordo com os termos e condições.</label>
+                <br>
+                <input type="checkbox" id="receberNot" name="receberNot" value="receberNot" required>
+                <label for="receberEmail">Desejo receber email's.</label>
+                <br><br>
+
+                <label for="nivel">Nível de Conhecimento em Informática (0 a 10):</label>
+                <input type="number" id="nivel" name="nivel" min="0" max="10" required>
+                <br><br>
+
+                <p>Qual sua disponibilidade de horários?</p>
+                <label for="disponibilidade">Entrada:</label><br>
+                <input type="time" id="disponibilidade" name="disponibilidade" required><br>
+                <label for="disponibilidadeS">Saída:</label><br>
+                <input type="time" id="disponibilidadeS" name="disponibilidadeS" required>
+                <br><br>
+
+                <label for="amigo">Alguma referência de amigo?Digite abaixo se sim.</label><br>
+                <input type="text" id="amigo" name="amigo">
+                <br><br>
+
+                <label for="hobbie">Hobbie</label><br>
+                <input type="text" id="hobbie" name="hobbie" placeholder="Digite seu hobbie favorito...">
+                <br><br>
+
+                <label for="">Estado Civil</label><br>
+                 <label for="solteiro">Solteiro(a)</label>
+                 <input type="radio" value="solteiro" id="solteiro" name="estado" required>
+                 <br>
+                 <label for="">Casado(a)</label>
+                 <input type="radio" value="casado" id="casado" name="estado">
+                 <br>
+                 <label for="">Viuvo(a)</label>
+                 <input type="radio" value="viuvo" id="viuvo" name="estado">
+                <br><br>
+
+                <p>Idiomas falados:</p>
+                 <input type="checkbox" id="Portugues" name="Portugues" value="Portugues" required>
+                 <label for="Portugues">Português</label>
+                 <br>
+                 <input type="checkbox" id="Ingles" name="Ingles" value="Ingles">
+                 <label for="Ingles">Inglês</label>
+                 <br>
+                 <input type="checkbox" id="outras" name="outras" value="outras">
+                 <label for="outras">Outras</label>
+                <br>
+                <label for="idioma">Se selecionou "Outras" escreva aqui qual.</label><br>
+                <input type="text" id="idioma" name="idioma">
+                <br><br>
+
+                <label for="metodo">Selecione seu método de pagamento favorito</label><br>
+                  <select name="metodo" id="metodo" required>
+                     <option value="" selected disabled>Selecione...</option>
+                     <option value="pix">Pix</option>
+                     <option value="dinheiro">Dinheiro</option>
+                     <option value="Cheque">Cheque</option>
+                     <option value="Cartão">Cartão</option>
+                  </select>
+                <br><br>
+
+                <label for="observacao">Outras Observações</label><br>
+                <textarea name="observacao" id="observacao" rows="5" cols="50" placeholder="Deseja adicionar alguma observação?Escreva aqui."></textarea>
+                <br><br>
+
+                <button type="submit">Enviar Inscrição</button>
+             </form>
+        </main>
+    </body>
+</html>
